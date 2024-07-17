@@ -1,17 +1,21 @@
-import book from "./styles/icons/book.png";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Books from "./pages/Books";
+import Donate from "./pages/Donate";
 import "./App.css";
 
 function App() {
   return (
-    <div className='App'>
-      <p className='subtitle'>Bem vindo ao nosso estúdio</p>
-      <div className='titleContainer'>
-        <h1 className='title'>BOOK I</h1>
-        <img className='titleIcon' src={book} alt='Book' />
-        <img className='titleIcon' src={book} alt='Book' />
-        <h1 className='title'>ERSION</h1>
+    <Router>
+      <div className='App'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/books' element={<Books />} />
+          <Route path='/donate' element={<Donate />} />
+        </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

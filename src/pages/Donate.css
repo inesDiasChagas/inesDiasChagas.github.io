@@ -1,0 +1,14 @@
+.donate-container {
+    background-color: #A6D2F1;
+    color: var(--main-foreground-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+.donate-content {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

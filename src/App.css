@@ -3,36 +3,24 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background-color: var(--main-background-color);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   color: var(--main-foreground-color);
 }
 
-.titleContainer {
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.title{
-  font-weight: 500;
-  font-size: 5rem;
-  margin-top: 0.25rem;
+nav ul li {
 }
 
-.titleIcon {
-  height: 5rem;
-  filter: invert(81%) sepia(6%) saturate(3423%) hue-rotate(187deg) brightness(92%) contrast(85%);
+nav ul li a {
+  color: var(--main-foreground-color);
+  text-decoration: none;
+  display: block;
 }
 
-.titleIcon:nth-child(3) {
-  margin-left:0.5rem;
-  filter: invert(75%) sepia(3%) saturate(4181%) hue-rotate(314deg) brightness(111%) contrast(96%);
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  margin-top: 10rem;
+nav ul li a:hover {
 }
