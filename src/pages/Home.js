@@ -12,7 +12,7 @@ function Home() {
         <h1>Pagina Inicial</h1>
         <p>Conteúdo da seção...</p>
       </SectionWrapper>
-      <SectionWrapper>
+      <SectionWrapper className='home-content-container'>
         <h1>Welcome to Section 1</h1>
         <p>This is an example of using the SectionWrapper component.</p>
       </SectionWrapper>

@@ -3,14 +3,11 @@
     height: 50vh;
 }
 
-.home-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.home-content-container{
+    height: 45vh;
 }
 
 .footer {
     background-color: #5D7EBA;
+    height: 25vh;
 }

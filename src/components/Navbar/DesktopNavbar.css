@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 2.5vh;
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
 }
