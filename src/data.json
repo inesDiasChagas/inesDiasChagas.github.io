@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "Card 1",
+      "description": "Descrição do Card 1",
+      "imageId": "BookCover.png"
+    },
+    {
+      "title": "Card 2",
+      "description": "Descrição do Card 2",
+      "imageId": "BookCover.png"
+    },
+    {
+      "title": "Card 3",
+      "description": "Descrição do Card 3",
+      "imageId": "BookCover.png"
+    },
+    {
+      "title": "Card 3",
+      "description": "Descrição do Card 3",
+      "imageId": "BookCover.png"
+    }
+  ],
+  "viewAll": {
+    "title": "View More",
+    "imageId": "plus.png"
+  }
+}

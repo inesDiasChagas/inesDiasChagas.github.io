@@ -3,11 +3,12 @@
     height: 50vh;
 }
 
-.home-content-container{
-    height: 45vh;
+.home-title-container{
+    margin-bottom: 3vh;
+    font-size:3rem;
 }
 
 .footer {
-    background-color: #5D7EBA;
-    height: 25vh;
+    background-color: #F8D8D0;
+    height: 15vh;
 }

@@ -2,17 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./SectionWrapper.css";
 
-function SectionWrapper({ children, backgroundImage, className }) {
-  const style = backgroundImage
-    ? { backgroundImage: `url(${backgroundImage})` }
-    : {};
+function SectionWrapper({ children, className }) {
   const combinedClassName = `section-wrapper ${className}`;
 
-  return (
-    <div className={combinedClassName} style={style}>
-      {children}
-    </div>
-  );
+  return <div className={combinedClassName}>{children}</div>;
 }
 
 SectionWrapper.propTypes = {

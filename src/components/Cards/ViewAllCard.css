@@ -1,0 +1,18 @@
+.view-more-card{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #F37671;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-more-card:hover {
+    scale:1.05
+}
+
+.view-more-card-image{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(315deg) brightness(104%) contrast(102%);
+    height: 6rem;
+}
