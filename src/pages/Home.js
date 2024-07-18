@@ -16,7 +16,7 @@ function Home() {
       </SectionWrapper>
       {data.sections.map((section, index) => (
         <SectionWrapper key={index} className='home-content-container'>
-          <h1>{section.title}</h1>
+          <h1 className='home-title-container'>{section.title}</h1>
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
