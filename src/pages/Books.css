@@ -1,12 +1,11 @@
 .books-container {
-    background-color: #A6D2F1;
+    background-color: #2782B8;
     color: var(--main-foreground-color);
     width: 100vw;
     height: 100vh;
 }
 
 .books-content {
-    margin-top: 50px;
     justify-content: center;
     align-items: center;
     display: flex;

@@ -1,9 +1,8 @@
-// Navbar.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./DesktopNavbar.css";
 
-function Navbar() {
+function DesktopNavbar() {
   return (
     <nav className='navbar'>
       <ul>
@@ -19,7 +18,7 @@ function Navbar() {
         </li>
         <li>
           <Link className='nav-default nav-highlight' to='/donate'>
-            Doação
+            Doações
           </Link>
         </li>
       </ul>
@@ -27,4 +26,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default DesktopNavbar;

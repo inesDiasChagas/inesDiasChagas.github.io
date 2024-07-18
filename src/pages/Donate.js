@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 
 import "./Donate.css";
 
 function Donate() {
   return (
     <div className='donate-container'>
-      <Navbar />
+      <NavbarWrapper />
       <div className='donate-content'>
         <h1>Donate</h1>
         <p>Conteúdo da seção...</p>

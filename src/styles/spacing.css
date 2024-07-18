@@ -1,0 +1,13 @@
+:root {
+    --min-xxs: 0;
+    --max-xxs: 374px;
+    --min-xs: 375px;
+    --max-xs: 767px;
+    --min-sm: 768px;
+    --max-sm: 1023px;
+    --min-md: 1024px;
+    --max-md: 1439px;
+    --min-lg: 1440px;
+    --max-lg: 2047px;
+    --min-xl: 2048px;
+}
