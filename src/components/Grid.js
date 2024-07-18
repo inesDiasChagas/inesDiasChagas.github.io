@@ -6,19 +6,20 @@ import ViewAllCard from "./Cards/ViewAllCard";
 const Grid = ({ data }) => {
   return (
     <div className='table-container'>
-      {data.books.map((item, index) => (
+      {data.sectionBooks.map((item, index) => (
         <Card
           key={index}
-          title={item.title}
-          description={item.description}
-          imageUrl={item.imageUrl}
+          title={data.allBooks.find((book) => item === book.id).title}
+          description={
+            data.allBooks.find((book) => item === book.id).description
+          }
+          imageId={data.allBooks.find((book) => item === book.id).imageId}
         />
       ))}
-      {data.viewAll && (
+      {data.viewMore && (
         <ViewAllCard
-          key={data.books.length}
-          imageUrl={data.viewAll.imageUrl}
-          title={data.viewAll.title}
+          imageId={data.viewMore.imageId}
+          title={data.viewMore.title}
         />
       )}
     </div>
