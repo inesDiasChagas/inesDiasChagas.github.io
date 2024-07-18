@@ -1,25 +1,27 @@
 import React from "react";
-import Card from "./Cards/Card";
 import "./Grid.css";
-import ViewAllCard from "./Cards/ViewAllCard";
+import DefaultCard from "./Cards/DefaultCard";
+import { CardTypes } from "../utils/types";
 
 const Grid = ({ data }) => {
   return (
     <div className='table-container'>
       {data.sectionBooks.map((item, index) => (
-        <Card
+        <DefaultCard
           key={index}
           title={data.allBooks.find((book) => item === book.id).title}
           description={
             data.allBooks.find((book) => item === book.id).description
           }
           imageId={data.allBooks.find((book) => item === book.id).imageId}
+          type={CardTypes.DefaultCard}
         />
       ))}
       {data.viewMore && (
-        <ViewAllCard
+        <DefaultCard
           imageId={data.viewMore.imageId}
           title={data.viewMore.title}
+          type={CardTypes.ViewMore}
         />
       )}
     </div>

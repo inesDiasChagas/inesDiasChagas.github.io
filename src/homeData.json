@@ -8,7 +8,8 @@
       ],
       "viewMore": {
         "title": "View More",
-        "imageId": "plus.png"
+        "imageId": "plus.png",
+        "slug": "/livros"
       }
     }
   ],
