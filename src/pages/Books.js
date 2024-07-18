@@ -11,7 +11,7 @@ function Books() {
     <React.Fragment>
       <SectionWrapper className='books-container'>
         <NavbarWrapper />
-        <h1 className='books-header'>"Todos os Livros"</h1>
+        <h1 className='books-header'>Todos os Livros</h1>
       </SectionWrapper>
       {data.sections.map((section, index) => (
         <SectionWrapper key={index} className='books-content-container'>
