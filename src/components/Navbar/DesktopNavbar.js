@@ -12,7 +12,7 @@ function DesktopNavbar() {
           </Link>
         </li>
         <li>
-          <Link className='nav-default' to='/books'>
+          <Link className='nav-default' to='/livros'>
             Livros
           </Link>
         </li>

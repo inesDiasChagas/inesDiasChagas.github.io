@@ -8,6 +8,10 @@
     font-size:3rem;
 }
 
+.home-content-container:nth-child(odd) {
+    background-color: #49A4D2;
+}
+
 .footer {
     background-color: #F8D8D0;
 }

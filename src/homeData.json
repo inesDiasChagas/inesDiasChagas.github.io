@@ -10,13 +10,6 @@
         "title": "View More",
         "imageId": "plus.png"
       }
-    },
-    {
-      "id": "0000001",
-      "title": "Continue a Ler",
-      "sectionBooks": [
-        "00003","00004","00005"
-      ]
     }
   ],
   "books": [

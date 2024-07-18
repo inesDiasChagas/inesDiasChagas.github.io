@@ -50,7 +50,7 @@ const MobileNavbar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/books' onClick={closeMenu}>
+            <Link to='/livros' onClick={closeMenu}>
               Livros
             </Link>
           </li>
