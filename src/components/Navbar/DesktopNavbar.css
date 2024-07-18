@@ -1,9 +1,11 @@
 .navbar {
     top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     padding: 2.5vh;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .navbar ul {

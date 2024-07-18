@@ -1,17 +1,16 @@
 import React from "react";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
+import SectionWrapper from "../components/Sections/SectionWrapper";
 
 import "./Books.css";
 
 function Books() {
   return (
-    <div className='books-container'>
+    <SectionWrapper className='books-container'>
       <NavbarWrapper />
-      <div className='books-content'>
-        <h1>Books</h1>
-        <p>Conteúdo da seção...</p>
-      </div>
-    </div>
+      <h1>Livros</h1>
+      <p>Conteúdo da seção...</p>
+    </SectionWrapper>
   );
 }
 

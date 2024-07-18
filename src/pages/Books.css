@@ -4,10 +4,3 @@
     width: 100vw;
     height: 100vh;
 }
-
-.books-content {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}

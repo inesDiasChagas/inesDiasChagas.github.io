@@ -7,8 +7,8 @@ import "./Home.css";
 function Home() {
   return (
     <React.Fragment>
-      <NavbarWrapper />
       <SectionWrapper className='home-container'>
+        <NavbarWrapper />
         <h1>Pagina Inicial</h1>
         <p>Conteúdo da seção...</p>
       </SectionWrapper>

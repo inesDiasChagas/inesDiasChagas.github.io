@@ -1,17 +1,16 @@
 import React from "react";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
+import SectionWrapper from "../components/Sections/SectionWrapper";
 
 import "./Donate.css";
 
 function Donate() {
   return (
-    <div className='donate-container'>
+    <SectionWrapper className='donate-container'>
       <NavbarWrapper />
-      <div className='donate-content'>
-        <h1>Donate</h1>
-        <p>Conteúdo da seção...</p>
-      </div>
-    </div>
+      <h1>Doações</h1>
+      <p>Conteúdo da seção...</p>
+    </SectionWrapper>
   );
 }
 

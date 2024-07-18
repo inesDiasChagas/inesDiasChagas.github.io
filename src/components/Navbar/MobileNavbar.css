@@ -1,8 +1,8 @@
 .sandwich-menu {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1001;
+    top: 0;
+    left: 0;
+    padding: 2.5vh;
 }
 
 .toggle-checkbox {
@@ -12,7 +12,6 @@
 .toggle-label {
     display: inline-block;
     cursor: pointer;
-    padding: 10px;
 }
 
 .bar {
