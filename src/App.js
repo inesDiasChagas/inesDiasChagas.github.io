@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import Donate from "./pages/Donate";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/livros' element={<Books />} />
           <Route path='/donate' element={<Donate />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

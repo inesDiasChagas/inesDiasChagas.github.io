@@ -20,9 +20,6 @@ function Home() {
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
-      <SectionWrapper className='footer'>
-        <h1>Footer</h1>
-      </SectionWrapper>
     </React.Fragment>
   );
 }
