@@ -1,6 +1,10 @@
 .home-container {
-    background-image: url("/src/styles/images/library-large.png");
+    background-image: url("/src/styles/images/floating-islands-large.png");
     height: 50vh;
+}
+
+.home-donation-container {
+    background-color: #96BA70;
 }
 
 .home-title-container{

@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import Donate from "./pages/Donate";
 import "./App.css";
-import Footer from "./components/Footer";
+import Footer from "./components/Sections/Footer";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "../components/Grid";
+import Grid from "../components/Grids/Grid";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
 import data from "../homeData.json";
@@ -12,7 +12,7 @@ function Home() {
       <SectionWrapper className='home-container'>
         <NavbarWrapper />
         <p>Bem Vindo</p>
-        <h1>Studio</h1>
+        <h1>Estúdio de Escrita</h1>
       </SectionWrapper>
       {data.sections.map((section, index) => (
         <SectionWrapper key={index} className='home-content-container'>
@@ -20,6 +20,11 @@ function Home() {
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
+      <SectionWrapper className='home-donation-container'>
+        <NavbarWrapper />
+        <h1>Gosta dos nossos Livros? </h1>
+        <h2>Os nosso livros sao 100% gratis!</h2>
+      </SectionWrapper>
     </React.Fragment>
   );
 }

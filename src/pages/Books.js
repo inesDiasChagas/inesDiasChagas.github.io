@@ -2,7 +2,7 @@ import React from "react";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
 import data from "../booksData.json";
-import Grid from "../components/Grid";
+import Grid from "../components/Grids/Grid";
 
 import "./Books.css";
 
@@ -11,7 +11,7 @@ function Books() {
     <React.Fragment>
       <SectionWrapper className='books-container'>
         <NavbarWrapper />
-        <h1 className='books-header'>Todos os Livros</h1>
+        <h1>Todos os Livros</h1>
       </SectionWrapper>
       {data.sections.map((section, index) => (
         <SectionWrapper key={index} className='books-content-container'>
