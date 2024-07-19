@@ -10,7 +10,11 @@ const DefaultCard = ({ imageId, title, type, description }) => {
   const imageUrl = process.env.PUBLIC_URL + "/" + imageId;
 
   const onClick = () => {
-    navigate("/livros");
+    if (CardTypes.DefaultCard) {
+      navigate(`/livros/${title}`);
+    } else {
+      navigate("/livros");
+    }
   };
 
   const cardClass = classNames("card", {

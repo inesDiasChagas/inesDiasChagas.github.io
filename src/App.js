@@ -14,6 +14,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/livros' element={<Books />} />
           <Route path='/donate' element={<Donate />} />
+          <Route path='/livros/:title' element={<Donate />} />
         </Routes>
         <Footer />
       </div>
