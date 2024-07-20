@@ -1,25 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./DesktopNavbar.css";
 
-function DesktopNavbar() {
+function DesktopNavbar({ className }) {
+  const combinedClassName = `navbar ${className}`;
+
   return (
-    <nav className='navbar'>
+    <nav className={combinedClassName}>
       <ul>
         <li>
-          <Link className='nav-default' to='/'>
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? "nav-default nav-active" : "nav-default"
+            }
+            to='/'
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className='nav-default' to='/livros'>
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? "nav-default nav-active" : "nav-default"
+            }
+            activeClassName='nav-active'
+            to='/livros'
+          >
             Livros
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className='nav-default nav-highlight' to='/donate'>
+          <NavLink
+            className={(navData) =>
+              navData.isActive ? "nav-default nav-active" : "nav-default"
+            }
+            activeClassName='nav-active'
+            to='/donate'
+          >
             Doações
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

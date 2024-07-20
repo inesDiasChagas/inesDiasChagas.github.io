@@ -37,9 +37,11 @@ const MobileNavbar = () => {
     <div>
       <div className='sandwich-menu' onClick={toggleMenu}>
         <div className='toggle-label'>
-          <span className='bar'></span>
-          <span className='bar'></span>
-          <span className='bar'></span>
+          <div className='bars'>
+            <span className='bar'></span>
+            <span className='bar'></span>
+            <span className='bar'></span>
+          </div>
         </div>
       </div>
       <div className={`overlay ${isOpen ? "open" : ""}`} onClick={closeMenu}>

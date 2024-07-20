@@ -1,4 +1,11 @@
 export const CardTypes = {
   ViewMore: "ViewMore",
-  DefaultCard: "DefaultCard",
+  Book: "Book",
+};
+
+export const ButtonTypes = {
+  HallowButton: "HallowButton",
+  HallowSquaredButton: "HallowSquaredButton",
+  SquaredButton: "SquaredButton",
+  DefaultButton: "DefaultButton",
 };

@@ -1,7 +1,6 @@
 .sandwich-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: flex-start;
     padding: 2.5vh;
 }
 
@@ -14,7 +13,11 @@
     cursor: pointer;
 }
 
-.bar {
+.bars{
+        padding: 0.345rem;
+}
+
+.bar{
     display: block;
     width: 35px;
     height: 6px;
@@ -72,5 +75,5 @@
 }
 
 .menu a:hover {
-    background-color: #F6B6C2;
+    background-color: #F37671;
 }

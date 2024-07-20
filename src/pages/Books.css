@@ -1,6 +1,12 @@
-.books-container {
+.books-header-container {
     background-image: url("/src/styles/images/library-large.png");
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.books-header-content-container {
+    flex-grow: 1;
 }
 
 .books-content-container:nth-child(odd) {

@@ -1,0 +1,57 @@
+{
+  "The Great Book": {
+    "title": "The Great Book",
+    "author": "John Doe",
+    "description": "This is a detailed description of the book. It provides an overview of the main plot and themes.",
+    "score": 4.5,
+    "imageId": "BookCover.png",
+    "chapters": [
+      {
+        "title": "Chapter 1: The Beginning",
+        "content": [
+          {
+            "type": "text",
+            "value": "This is the first paragraph of chapter 1."
+          },
+          {
+            "type": "image",
+            "value": "BookCover.png"
+          },
+          {
+            "type": "text",
+            "value": "This is the second paragraph of chapter 1."
+          },
+          {
+            "type": "image",
+            "value": "BookCover.png"
+          },
+          {
+            "type": "text",
+            "value": "This is the third paragraph of chapter 1."
+          }
+        ]
+      },
+      {
+        "title": "Chapter 2: The Journey",
+        "content": [
+          {
+            "type": "text",
+            "value": "This is the first paragraph of chapter 2."
+          },
+          {
+            "type": "image",
+            "value": "BookCover.png"
+          },
+          {
+            "type": "image",
+            "value": "BookCover.png"
+          },
+          {
+            "type": "text",
+            "value": "This is the second paragraph of chapter 2."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -15,22 +15,22 @@
   ],
   "books": [
     {"id":"00001",
-      "title": "Livro 1",
+      "title": "The Great Book",
       "description": "Livro 1",
       "imageId": "BookCover.png"
     },
     {"id":"00002",
-      "title": "Livro 2",
+      "title": "The Great Book",
       "description": "Livro 2",
       "imageId": "BookCover2.png"
     },
     {"id":"00003",
-      "title": "Livro 3",
+      "title": "The Great Book",
       "description": "Livro 3",
       "imageId": "BookCover3.png"
     },
     { "id":"00004",
-      "title": "Livro 4",
+      "title": "The Great Book",
       "description": "Livro 4",
       "imageId": "BookCover2.png"
     },

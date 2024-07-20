@@ -14,7 +14,7 @@ const Grid = ({ data }) => {
             data.allBooks.find((book) => item === book.id).description
           }
           imageId={data.allBooks.find((book) => item === book.id).imageId}
-          type={CardTypes.DefaultCard}
+          type={CardTypes.Book}
         />
       ))}
       {data.viewMore && (

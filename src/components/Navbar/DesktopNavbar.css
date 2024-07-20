@@ -1,11 +1,7 @@
 .navbar {
-    top: 0;
     display: flex;
     justify-content: center;
     padding: 2.5vh;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .navbar ul {
@@ -23,15 +19,9 @@
 }
 
 .nav-default:hover {
-    background-color: #F6B6C2;
-}
-
-.nav-highlight {
-    font-weight: 600;
     background-color: #F37671;
 }
 
-.nav-highlight:hover {
-    scale: 1.1;
-    background-color: #F37671;
+.nav-active {
+    background-color: #5277B4;
 }

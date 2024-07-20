@@ -10,19 +10,19 @@ const DefaultCard = ({ imageId, title, type, description }) => {
   const imageUrl = process.env.PUBLIC_URL + "/" + imageId;
 
   const onClick = () => {
-    if (CardTypes.DefaultCard) {
-      navigate(`/livros/${title}`);
+    if (type === CardTypes.Book) {
+      navigate(`/livro/${title}`);
     } else {
       navigate("/livros");
     }
   };
 
   const cardClass = classNames("card", {
-    "card-with-content": type === CardTypes.DefaultCard,
+    "card-with-content": type === CardTypes.Book,
     "card-without-content": type === CardTypes.ViewMore,
   });
   const imageClass = classNames({
-    "card-image-with-content": type === CardTypes.DefaultCard,
+    "card-image-with-content": type === CardTypes.Book,
     "card-image-without-content": type === CardTypes.ViewMore,
   });
   return (

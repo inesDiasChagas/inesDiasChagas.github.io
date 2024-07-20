@@ -1,6 +1,15 @@
-.donate-container {
-    background-color: #B8D9E9;
-    color: var(--main-foreground-color);
-    width: 100vw;
-    height: 100vh;
+.donate-header-container {
+    background-image: url("/src/styles/images/library-large.png");
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-header-content-container {
+    flex-grow: 1;
+}
+
+.donate-element {
+    margin-bottom: 3vh;
+        font-size: 3rem;
 }
