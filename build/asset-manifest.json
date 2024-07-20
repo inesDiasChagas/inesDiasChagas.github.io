@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.69f48bd5.css",
-    "main.js": "/static/js/main.3250ba77.js",
+    "main.css": "/static/css/main.95a332e3.css",
+    "main.js": "/static/js/main.576f38be.js",
+    "static/media/floating-islands-large.png": "/static/media/floating-islands-large.8afef002c2d4d75c3e21.png",
     "static/media/library-large.png": "/static/media/library-large.1c290863153e8c7e17ba.png",
     "index.html": "/index.html",
-    "main.69f48bd5.css.map": "/static/css/main.69f48bd5.css.map",
-    "main.3250ba77.js.map": "/static/js/main.3250ba77.js.map"
+    "main.95a332e3.css.map": "/static/css/main.95a332e3.css.map",
+    "main.576f38be.js.map": "/static/js/main.576f38be.js.map"
   },
   "entrypoints": [
-    "static/css/main.69f48bd5.css",
-    "static/js/main.3250ba77.js"
+    "static/css/main.95a332e3.css",
+    "static/js/main.576f38be.js"
   ]
 }
