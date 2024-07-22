@@ -2,11 +2,10 @@ import React from "react";
 import Grid from "../components/Grids/Grid";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
-import Button from "../components/Buttons/Button";
+import SectionDonate from "../components/Sections/SectionDonate";
 import data from "../homeMockData.json";
 
 import "./Home.css";
-import { ButtonTypes } from "../utils/types";
 
 function Home() {
   return (
@@ -24,18 +23,7 @@ function Home() {
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
-      <SectionWrapper className='home-donation-container'>
-        <h1 className='home-donation-element'>Gosta dos nossos Livros? </h1>
-        <h2 className='home-donation-element'>
-          Os nosso livros sao 100% gratis!
-        </h2>
-        <Button
-          className='home-donation-element home-donation-button'
-          buttonType={ButtonTypes.DefaultButton}
-          label='Contribuir'
-          type='button'
-        ></Button>
-      </SectionWrapper>
+      <SectionDonate />
     </React.Fragment>
   );
 }

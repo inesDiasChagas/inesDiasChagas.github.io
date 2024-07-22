@@ -5,6 +5,7 @@ import data from "../booksMockData.json";
 import Grid from "../components/Grids/Grid";
 
 import "./Books.css";
+import SectionDonate from "../components/Sections/SectionDonate";
 
 function Books() {
   return (
@@ -21,6 +22,7 @@ function Books() {
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
+      <SectionDonate />
     </React.Fragment>
   );
 }

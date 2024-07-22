@@ -3,6 +3,10 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .books-header-content-container {

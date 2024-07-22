@@ -1,8 +1,12 @@
 .donate-header-container {
-    background-image: url("/src/styles/images/library-large.png");
+    background-image: url("/src/styles/images/make-a-wish.png");
     height: 50vh;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .donate-header-content-container {

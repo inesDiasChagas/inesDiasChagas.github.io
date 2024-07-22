@@ -4,6 +4,7 @@ import data from "../bookMockData.json";
 
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
+import SectionDonate from "../components/Sections/SectionDonate";
 import "./BookDetailsPage.css";
 
 const BookDetailPage = () => {
@@ -73,6 +74,7 @@ const BookDetailPage = () => {
           </div>
         )}
       </SectionWrapper>
+      <SectionDonate />
     </React.Fragment>
   );
 };

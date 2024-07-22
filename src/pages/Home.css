@@ -3,22 +3,14 @@
     height: 50vh;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .home-header-content-container{
     flex-grow: 1;
-}
-
-.home-donation-container {
-    background-color: #96BA70;
-}
-
-.home-donation-element {
-    margin: 1rem 0;
-}
-
-.home-donation-button {
-    margin: 1.5rem 0;
 }
 
 .home-title-container{
