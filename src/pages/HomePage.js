@@ -2,12 +2,12 @@ import React from "react";
 import Grid from "../components/Grids/Grid";
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
-import SectionDonate from "../components/Sections/SectionDonate";
+import DonateSection from "../components/Sections/DonateSection";
 import data from "../homeMockData.json";
 
-import "./Home.css";
+import "./HomePage.css";
 
-function Home() {
+function HomePage() {
   return (
     <React.Fragment>
       <div className='home-header-container'>
@@ -23,9 +23,9 @@ function Home() {
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
-      <SectionDonate />
+      <DonateSection />
     </React.Fragment>
   );
 }
 
-export default Home;
+export default HomePage;

@@ -100,3 +100,34 @@
     width: 100%;
     border-radius: 10px;
 }
+
+.book-header-container {
+    background-color: #5277B4;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-not-found-container {
+    text-align: center;
+    height: 72.5vh;
+}
+
+.book-not-found-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.book-not-found-container p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.chapter-content {
+    position: relative;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

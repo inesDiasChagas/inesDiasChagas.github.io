@@ -15,6 +15,7 @@ const Grid = ({ data }) => {
           }
           imageId={data.allBooks.find((book) => item === book.id).imageId}
           type={CardTypes.Book}
+          id={data.allBooks.find((book) => item === book.id).id}
         />
       ))}
       {data.viewMore && (

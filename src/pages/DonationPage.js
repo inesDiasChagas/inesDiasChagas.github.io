@@ -3,9 +3,9 @@ import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
 import DonationForm from "../components/Forms/DonationForm";
 
-import "./Donate.css";
+import "./DonationPage.css";
 
-function Donate() {
+function DonationPage() {
   return (
     <React.Fragment>
       <div className='donate-header-container'>
@@ -22,4 +22,4 @@ function Donate() {
   );
 }
 
-export default Donate;
+export default DonationPage;

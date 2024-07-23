@@ -4,7 +4,7 @@
       "id": "0000001",
       "title": "Novidades",
       "sectionBooks": [
-        "00001","00003","00001","00002"
+        "00001","00002","00003"
       ],
       "viewMore": {
         "title": "View More",
@@ -17,7 +17,7 @@
     {"id":"00001",
       "title": "The Great Book",
       "description": "Livro 1",
-      "imageId": "BookCover.png"
+      "imageId": "BookCover1.png"
     },
     {"id":"00002",
       "title": "The Great Book",
@@ -28,16 +28,6 @@
       "title": "The Great Book",
       "description": "Livro 3",
       "imageId": "BookCover3.png"
-    },
-    { "id":"00004",
-      "title": "The Great Book",
-      "description": "Livro 4",
-      "imageId": "BookCover2.png"
-    },
-    { "id":"00005",
-      "title": "Livro 5",
-      "description": "Livro 5",
-      "imageId": "BookCover.png"
     }
   ]
 }

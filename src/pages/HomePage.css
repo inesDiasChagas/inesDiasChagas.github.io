@@ -11,11 +11,13 @@
 
 .home-header-content-container{
     flex-grow: 1;
+    text-align: center;
 }
 
 .home-title-container{
     margin-bottom: 3vh;
     font-size:3rem;
+    text-align: center;
 }
 
 .home-content-container:nth-child(odd) {

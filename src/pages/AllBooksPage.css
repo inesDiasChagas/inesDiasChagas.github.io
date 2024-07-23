@@ -11,12 +11,17 @@
 
 .books-header-content-container {
     flex-grow: 1;
+    text-align: center;
 }
 
 .books-content-container:nth-child(odd) {
-    background-color: #49A4D2;
+    background-color: #8AACBF;
 }
 
 .books-header {
     margin: 5rem 0;
+}
+
+.books-title-container{
+    margin-bottom: 3vh;
 }

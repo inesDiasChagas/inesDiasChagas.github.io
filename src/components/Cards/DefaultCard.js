@@ -5,13 +5,13 @@ import { useNavigate } from "react-router-dom";
 
 import "./DefaultCard.css";
 
-const DefaultCard = ({ imageId, title, type, description }) => {
+const DefaultCard = ({ imageId, title, type, description, id }) => {
   let navigate = useNavigate();
   const imageUrl = process.env.PUBLIC_URL + "/" + imageId;
 
   const onClick = () => {
-    if (type === CardTypes.Book) {
-      navigate(`/livro/${title}`);
+    if (type === CardTypes.Book && id) {
+      navigate(`/livro/${id}`);
     } else {
       navigate("/livros");
     }

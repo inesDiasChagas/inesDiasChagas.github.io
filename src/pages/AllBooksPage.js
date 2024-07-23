@@ -3,11 +3,11 @@ import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
 import data from "../booksMockData.json";
 import Grid from "../components/Grids/Grid";
+import DonateSection from "../components/Sections/DonateSection";
 
-import "./Books.css";
-import SectionDonate from "../components/Sections/SectionDonate";
+import "./AllBooksPage.css";
 
-function Books() {
+function AllBooksPage() {
   return (
     <React.Fragment>
       <div className='books-header-container'>
@@ -18,13 +18,13 @@ function Books() {
       </div>
       {data.sections.map((section, index) => (
         <SectionWrapper key={index} className='books-content-container'>
-          <h1>{section.title}</h1>
+          <h1 className='books-title-container'>{section.title}</h1>
           <Grid data={{ ...section, allBooks: data.books }} />
         </SectionWrapper>
       ))}
-      <SectionDonate />
+      <DonateSection />
     </React.Fragment>
   );
 }
 
-export default Books;
+export default AllBooksPage;

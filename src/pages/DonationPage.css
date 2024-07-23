@@ -11,9 +11,11 @@
 
 .donate-header-content-container {
     flex-grow: 1;
+    text-align: center;
 }
 
 .donate-element {
     margin-bottom: 3vh;
-        font-size: 3rem;
+    font-size: 3rem;
+    text-align: center;
 }
