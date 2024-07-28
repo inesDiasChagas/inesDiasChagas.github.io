@@ -4,9 +4,8 @@ import data from "../bookMockData.json";
 
 import NavbarWrapper from "../components/Navbar/NavbarWrapper";
 import SectionWrapper from "../components/Sections/SectionWrapper";
-import "./BookPage.css";
 import DonateSection from "../components/Sections/DonateSection";
-import Button from "../components/Buttons/Button";
+import "./BookPage.css";
 
 const BookDetailPage = () => {
   const { id } = useParams();
@@ -108,20 +107,37 @@ const BookDetailPage = () => {
               }
             })}
             <div className='navigation-buttons'>
-              {selectedChapterIndex > 0 && (
-                <Button
-                  onClick={handleGoToPreviousChapter}
-                  className='nav-button'
-                >
-                  Anterior
-                </Button>
-              )}
-              {selectedChapterIndex < book.chapters.length - 1 && (
-                <Button
-                  onClick={handleGoToNextChapter}
-                  className='nav-button'
-                ></Button>
-              )}
+              <div className='nav-button-wrapper'>
+                {selectedChapterIndex > 0 && (
+                  <button
+                    onClick={handleGoToPreviousChapter}
+                    className='nav-button'
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/left-arrow.png"}
+                      alt='Anterior'
+                      className='nav-button-image prev-image'
+                    />
+
+                    <span>Anterior</span>
+                  </button>
+                )}
+              </div>
+              <div className='nav-button'>
+                {selectedChapterIndex < book.chapters.length - 1 && (
+                  <button
+                    onClick={handleGoToNextChapter}
+                    className='nav-button'
+                  >
+                    <span>Proximo</span>
+                    <img
+                      src={process.env.PUBLIC_URL + "/right-arrow.png"}
+                      alt='Anterior'
+                      className='nav-button-image next-image'
+                    />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         )}

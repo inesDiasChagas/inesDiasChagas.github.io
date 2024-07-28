@@ -129,5 +129,40 @@
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 2.25rem;
+}
+
+.nav-button-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-button-wrapper:last-child {
+    justify-content: flex-end;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    font-weight: 600;
+    color: #F37671;
+    cursor: pointer;
+}
+
+.nav-button-image{
+    height: 1rem;
+    filter: invert(74%) sepia(34%) saturate(5224%) hue-rotate(314deg) brightness(98%) contrast(94%);
+}
+
+.prev-image {
+    margin-right: 0.25rem;
+}
+
+.next-image {
+    margin-left: 0.25rem;
 }
