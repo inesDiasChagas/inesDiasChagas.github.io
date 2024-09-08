@@ -1,0 +1,36 @@
+:root {
+    --page-padding: 2.5rem;
+
+
+  --breakpoint-xxs-min: 0px;
+  --breakpoint-xxs-max: 319px;
+
+  --breakpoint-xs-min: 320px;
+  --breakpoint-xs-max: 479px;
+
+  --breakpoint-sm-min: 480px;
+  --breakpoint-sm-max: 575px;
+
+  --breakpoint-md-min: 576px;
+  --breakpoint-md-max: 767px;
+
+  --breakpoint-lg-min: 768px;
+  --breakpoint-lg-max: 991px;
+
+  --breakpoint-xl-min: 992px;
+  --breakpoint-xl-max: 1199px;
+
+  --breakpoint-xxl-min: 1200px;
+  --breakpoint-xxl-max: 1399px;
+
+  --breakpoint-xxxl-min: 1400px;
+  --breakpoint-xxxl-max: 2999px;
+
+  --breakpoint-xxxxl-min: 3000px;
+  --breakpoint-xxxxl-max: 3999px;
+
+  --breakpoint-xxxxxl-min: 4000px;
+  --breakpoint-xxxxxl-max: 4999px;
+
+  --breakpoint-xxxxxxl-min: 5000px;
+}
