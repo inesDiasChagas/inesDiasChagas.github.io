@@ -1,6 +1,10 @@
 :root {
-    --page-padding: 2.5rem;
+    --page-padding: 4rem;
+    --containers-padding: 1.5rem;
 
+    @media (min-width: 1200px) {
+        --containers-padding: 4rem;
+    }
 
   --breakpoint-xxs-min: 0px;
   --breakpoint-xxs-max: 319px;

@@ -1,3 +1,6 @@
+import IconContainer from "../components/IconContainer";
+import linkedinIcon from "../styles/icons/LinkedIn.png";
+
 import "./Home.css";
 
 function Home() {
@@ -10,7 +13,8 @@ function Home() {
         <span>Who Am I?</span>
       </div>
       <div className='container-answer'>
-        <span>I am a Frontend Developer</span>
+        <span>I am a </span>
+        <span className='answer'>Frontend Developer</span>
       </div>
       <div className='container-change-profile'>
         <span>Click Me</span>
@@ -25,10 +29,10 @@ function Home() {
         <span>Projects</span>
       </div>
       <div className='container-contacts'>
-        <span>Contact Me</span>
+        <IconContainer imgSrc={linkedinIcon} title='Contact Me' />
       </div>
       <div className='container-info-link'>
-        <span>GitHub</span>
+        <IconContainer imgSrc={linkedinIcon} title='GitHub' />
       </div>
     </div>
   );
