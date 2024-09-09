@@ -8,12 +8,34 @@
     gap: 15px;
     padding: var(--page-padding);
     min-height: calc(100vh - 2 * var(--page-padding));
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        padding: var(--page-padding);
+        height: calc(100vh - 2 * var(--page-padding));
+    }
 }
 
 .grid-container>div {
     border-radius: 40px;
     padding: var(--containers-padding) 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
+
+    @media (min-width: 576px) {
+        font-size: 1.25rem;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        border-radius: 40px;
+        font-size: 1.25rem;
+        padding: var(--containers-padding);
+    }
 }
 
 .container-name {
@@ -24,6 +46,11 @@
     font-family: 'IBM Plex Mono', monospace;
     color: var(--profile1-main-background-color);
     grid-column: 1 / span 2;
+
+    @media (min-width: 1200px) {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 5;
+    }
 }
 
 .container-question {
@@ -34,6 +61,11 @@
     font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
     grid-column: 1 / span 2;
+
+    @media (min-width: 1200px) {
+        grid-column: 5 / span 5;
+        grid-row: 1 / span 5;
+    }
 }
 
 .container-answer {
@@ -49,6 +81,11 @@
         padding-left: 5px;
         font-weight: 600;
     }
+
+    @media (min-width: 1200px) {
+        grid-column: 10 / span 6;
+        grid-row: 1 / span 5;
+    }
 }
 
 .container-change-profile {
@@ -57,6 +94,11 @@
     grid-column: 1 / span 2;
     font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
+
+    @media (min-width: 1200px) {
+        grid-column: 1 / span 4;
+        grid-row: 6 / span 10;
+    }
 }
 
 .container-info {
@@ -65,6 +107,11 @@
     grid-column: 1 / span 2;
     font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
+
+    @media (min-width: 1200px) {
+        grid-column: 5 / span 5;
+        grid-row: 6 / span 6;
+    }
 }
 
 .container-skills {
@@ -73,6 +120,11 @@
     grid-column: 1 / span 2;
     font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
+
+    @media (min-width: 1200px) {
+        grid-column: 5 / span 5;
+        grid-row: 12 / span 4;
+    }
 }
 
 .container-projects {
@@ -81,74 +133,28 @@
     grid-column: 1 / span 2;
     font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
+
+    @media (min-width: 1200px) {
+        grid-column: 10 / span 3;
+        grid-row: 6 / span 10;
+    }
 }
 
 .container-contacts {
     grid-column: 1 / span 1;
     background-color: var(--profile1-main-background-color);
+
+    @media (min-width: 1200px) {
+        grid-column: 13 / span 3;
+        grid-row: 6 / span 5;
+    }
 }
 
 .container-info-link {
     grid-column: 2 / span 1;
     background-color: var(--profile1-secondary-background-color);
-}
 
-@media (min-width: 1200px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(15, 1fr);
-        grid-template-rows: repeat(15, auto);
-        padding: var(--page-padding);
-        height: calc(100vh - 2 * var(--page-padding));
-    }
-
-        .grid-container>div {
-            border-radius: 40px;
-            font-size: 2rem;
-            padding: var(--containers-padding);
-        }
-
-    .container-name {
-        grid-column: 1 / span 4;
-        grid-row: 1 / span 5;
-    }
-
-    .container-question {
-        grid-column: 5 / span 5;
-        grid-row: 1 / span 5;
-    }
-
-    .container-answer {
-        grid-column: 10 / span 6;
-        grid-row: 1 / span 5;
-    }
-
-    .container-change-profile {
-        grid-column: 1 / span 4;
-        grid-row: 6 / span 10;
-    }
-
-    .container-info {
-        grid-column: 5 / span 5;
-        grid-row: 6 / span 6;
-    }
-
-    .container-skills {
-        grid-column: 5 / span 5;
-        grid-row: 12 / span 4;
-    }
-
-    .container-projects {
-        grid-column: 10 / span 3;
-        grid-row: 6 / span 10;
-    }
-
-    .container-contacts {
-        grid-column: 13 / span 3;
-        grid-row: 6 / span 5;
-    }
-
-    .container-info-link {
+    @media (min-width: 1200px) {
         grid-column: 13 / span 3;
         grid-row: 11 / span 5;
     }

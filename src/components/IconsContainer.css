@@ -21,7 +21,29 @@
 }
 
 .icon {
-    max-width: 7rem;
-    padding: 1rem 0;
+    max-width: 2rem;
     filter: brightness(0) invert(1);
+    padding: 0.25rem;
+
+    @media (min-width: 376px) {
+        max-width: 4rem;
+    }
+
+    @media (min-width: 480px) {
+        max-width: 5rem;
+    }
+
+    @media (min-width: 576px) {
+        padding: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        padding: 1.5rem;
+        max-width: 6rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0.25rem;
+        max-width: 4rem;
+    }
 }

@@ -1,40 +1,50 @@
 :root {
-    --page-padding: 4rem;
-    --containers-padding: 1.5rem;
-
-    @media (min-width: 1200px) {
-        --containers-padding: 4rem;
-    }
+  --page-padding: 1rem;
+  --containers-padding: 1.5rem;
 
   --breakpoint-xxs-min: 0px;
   --breakpoint-xxs-max: 319px;
 
   --breakpoint-xs-min: 320px;
-  --breakpoint-xs-max: 479px;
+  --breakpoint-xs-max: 375px;
 
-  --breakpoint-sm-min: 480px;
-  --breakpoint-sm-max: 575px;
+  --breakpoint-sm-min: 376px;
+  --breakpoint-sm-max: 479px;
+
+  --breakpoint-md-sm-min: 480px;
+  --breakpoint-md-sm-max: 575px;
 
   --breakpoint-md-min: 576px;
   --breakpoint-md-max: 767px;
 
-  --breakpoint-lg-min: 768px;
-  --breakpoint-lg-max: 991px;
+  --breakpoint-md-lg-min: 768px;
+  --breakpoint-md-lg-max: 1024px;
 
-  --breakpoint-xl-min: 992px;
-  --breakpoint-xl-max: 1199px;
+  --breakpoint-lg-min: 1025px;
+  --breakpoint-lg-max: 1199px;
 
-  --breakpoint-xxl-min: 1200px;
-  --breakpoint-xxl-max: 1399px;
+  --breakpoint-lg-min: 1025px;
+  --breakpoint-lg-max: 1199px;
 
-  --breakpoint-xxxl-min: 1400px;
-  --breakpoint-xxxl-max: 2999px;
+  --breakpoint-xl-min: 1200px;
+  --breakpoint-xl-max: 1399px;
 
-  --breakpoint-xxxxl-min: 3000px;
-  --breakpoint-xxxxl-max: 3999px;
+  --breakpoint-xxl-min: 1400px;
+  --breakpoint-xxl-max: 2999px;
 
-  --breakpoint-xxxxxl-min: 4000px;
-  --breakpoint-xxxxxl-max: 4999px;
+  --breakpoint-xxxl-min: 3000px;
+  --breakpoint-xxxl-max: 3999px;
 
-  --breakpoint-xxxxxxl-min: 5000px;
+  --breakpoint-xxxxl-min: 4000px;
+  --breakpoint-xxxxl-max: 4999px;
+
+  --breakpoint-xxxxxl-min: 5000px;
+
+  @media (min-width: 768px) {
+      --page-padding: 2rem;
+    }
+
+  @media (min-width: 1200px) {
+    --containers-padding: 1.5rem;
+  }
 }
