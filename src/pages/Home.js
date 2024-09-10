@@ -1,69 +1,10 @@
 import { useState } from "react";
-import IconsContainer from "../components/IconsContainer";
+import IconsContainer from "../components/containers/IconsContainer";
+import ListContainer from "../components/containers/ListContainer";
 
-import htmlIcon from "../styles/icons/Html.png";
-import cssIcon from "../styles/icons/Css.png";
-import jsIcon from "../styles/icons/Js.png";
-import reactIcon from "../styles/icons/React.png";
-import linkedinIcon from "../styles/icons/LinkedIn.png";
-import githubIcon from "../styles/icons/Github.png";
+import profiles from "../profiles.json";
 
 import "./Home.css";
-
-const profiles = [
-  {
-    role: "Frontend Developer",
-    skills: {
-      title: "Skills",
-      icons: [
-        { name: "HTML", iconSrc: htmlIcon },
-        { name: "CSS", iconSrc: cssIcon },
-        { name: "Javascript", iconSrc: jsIcon },
-        { name: "React Native", iconSrc: reactIcon },
-      ],
-    },
-    contactsLink: {
-      title: "Linkedin",
-      icons: [{ name: "Linkedin", iconSrc: linkedinIcon }],
-    },
-    infoLink: {
-      title: "GitHub",
-      icons: [{ name: "GitHub", iconSrc: githubIcon }],
-    },
-  },
-  {
-    role: "Robotics WannaBe",
-    skills: {
-      title: "Skills",
-      icons: [
-        { name: "React Native", iconSrc: linkedinIcon },
-        { name: "Javascript", iconSrc: linkedinIcon },
-        { name: "HTML", iconSrc: linkedinIcon },
-        { name: "CSS", iconSrc: linkedinIcon },
-      ],
-    },
-    infoLink: {
-      name: "GitHub",
-      iconSrc: linkedinIcon,
-    },
-  },
-  {
-    role: "Artist",
-    skills: {
-      title: "Skills",
-      icons: [
-        { name: "React Native", iconSrc: linkedinIcon },
-        { name: "Javascript", iconSrc: linkedinIcon },
-        { name: "HTML", iconSrc: linkedinIcon },
-        { name: "CSS", iconSrc: linkedinIcon },
-      ],
-    },
-    infoLink: {
-      name: "GitHub",
-      iconSrc: linkedinIcon,
-    },
-  },
-];
 
 function Home() {
   const [selectedProfile, setSelectedProfile] = useState(profiles[0]);
@@ -88,7 +29,10 @@ function Home() {
         <span>Click Me</span>
       </div>
       <div className='container-info'>
-        <span>Experiences</span>
+        <ListContainer
+          title={selectedProfile.container5.title}
+          list={selectedProfile.container5.list}
+        />
       </div>
       <div className='container-skills'>
         <IconsContainer

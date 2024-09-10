@@ -1,0 +1,72 @@
+[
+  {
+    "role": "Frontend Developer",
+    "container5": {
+      "containerType": "LIST",
+      "title": "Experiences",
+      "list": [
+        {
+          "title": "Associate Developer",
+          "subtitle": "Sky ",
+          "startDate": "Sep 2021",
+          "endDate": "Present"
+        },
+        {
+          "title": "Apprentice Developer",
+          "subtitle": "Sky ",
+          "startDate": "Aug 2021",
+          "endDate": "Sept 2021"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "icons": [
+        { "name": "HTML", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "CSS", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "Javascript", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "React Native", "iconSrc": "/icons/LinkedIn.png" }
+      ]
+    },
+    "contactsLink": {
+      "title": "Linkedin",
+      "icons": [{ "name": "Linkedin", "iconSrc": "/icons/LinkedIn.png" }]
+    },
+    "infoLink": {
+      "title": "GitHub",
+      "icons": [{ "name": "GitHub", "iconSrc": "/icons/LinkedIn.png" }]
+    }
+  },
+  {
+    "role": "Robotics WannaBe",
+    "skills": {
+      "title": "Skills",
+      "icons": [
+        { "name": "React Native", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "Javascript", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "HTML", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "CSS", "iconSrc": "/icons/LinkedIn.png" }
+      ]
+    },
+    "infoLink": {
+      "name": "GitHub",
+      "iconSrc": "/icons/LinkedIn.png"
+    }
+  },
+  {
+    "role": "Artist",
+    "skills": {
+      "title": "Skills",
+      "icons": [
+        { "name": "React Native", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "Javascript", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "HTML", "iconSrc": "/icons/LinkedIn.png" },
+        { "name": "CSS", "iconSrc": "/icons/LinkedIn.png" }
+      ]
+    },
+    "infoLink": {
+      "name": "GitHub",
+      "iconSrc": "/icons/LinkedIn.png"
+    }
+  }
+]
