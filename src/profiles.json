@@ -1,6 +1,21 @@
 [
   {
-    "role": "Frontend Developer",
+    "container1": {
+      "containerType": "QUOTE",
+      "quotes": [{ "quote": "Inês Chagas", "variants": ["HIGHLIGHT"] }]
+    },
+    "container2": {
+      "containerType": "QUOTE",
+      "quotes": [{ "quote": "Who Am I?" }]
+    },
+    "container3": {
+      "containerType": "QUOTE",
+      "quotes": [
+        { "quote": "I am a" },
+        { "quote": "Frontend Developer", "variants": ["BOLD"] }
+      ]
+    },
+    "container4": {},
     "container5": {
       "containerType": "LIST",
       "title": "Experiences",
@@ -19,8 +34,9 @@
         }
       ]
     },
-    "skills": {
-      "title": "Skills",
+    "container6": {
+      "containerType": "ICONS",
+      "title": "Sills",
       "icons": [
         { "name": "HTML", "iconSrc": "/icons/LinkedIn.png" },
         { "name": "CSS", "iconSrc": "/icons/LinkedIn.png" },
@@ -28,11 +44,14 @@
         { "name": "React Native", "iconSrc": "/icons/LinkedIn.png" }
       ]
     },
-    "contactsLink": {
+    "container7": {},
+    "container8": {
+      "containerType": "ICONS",
       "title": "Linkedin",
       "icons": [{ "name": "Linkedin", "iconSrc": "/icons/LinkedIn.png" }]
     },
-    "infoLink": {
+    "container9": {
+      "containerType": "ICONS",
       "title": "GitHub",
       "icons": [{ "name": "GitHub", "iconSrc": "/icons/LinkedIn.png" }]
     }

@@ -1,13 +1,34 @@
 import { useState } from "react";
 import IconsContainer from "../components/containers/IconsContainer";
 import ListContainer from "../components/containers/ListContainer";
+import { ContainerType } from "../utils/types";
 
 import profiles from "../profiles.json";
 
 import "./Home.css";
+import QuoteContainer from "../components/containers/QuoteContainer";
 
 function Home() {
   const [selectedProfile, setSelectedProfile] = useState(profiles[0]);
+
+  const renderContainer = (container) => {
+    if (container.containerType === ContainerType.ICONS) {
+      return (
+        <IconsContainer
+          title={container.title}
+          icons={container.icons}
+        ></IconsContainer>
+      );
+    }
+    if (container.containerType === ContainerType.LIST) {
+      return <ListContainer title={container.title} list={container.list} />;
+    }
+    if (container.containerType === ContainerType.QUOTE) {
+      return <QuoteContainer quotes={container.quotes} />;
+    } else {
+      return <span>There was an error</span>;
+    }
+  };
 
   const onClick = () => {
     setSelectedProfile(profiles[1]);
@@ -16,44 +37,31 @@ function Home() {
   return (
     <div className='grid-container'>
       <div className='container-name'>
-        <span>INES CHAGAS</span>
+        {renderContainer(selectedProfile.container1)}
       </div>
       <div className='container-question'>
-        <span>Who Am I?</span>
+        {renderContainer(selectedProfile.container2)}
       </div>
       <div className='container-answer'>
-        <span>I am a </span>
-        <span className='answer'>{selectedProfile.role}</span>
+        {renderContainer(selectedProfile.container3)}
       </div>
       <div className='container-change-profile' onClick={onClick}>
         <span>Click Me</span>
       </div>
       <div className='container-info'>
-        <ListContainer
-          title={selectedProfile.container5.title}
-          list={selectedProfile.container5.list}
-        />
+        {renderContainer(selectedProfile.container5)}
       </div>
       <div className='container-skills'>
-        <IconsContainer
-          title={selectedProfile.skills.title}
-          icons={selectedProfile.skills.icons}
-        ></IconsContainer>
+        {renderContainer(selectedProfile.container6)}
       </div>
       <div className='container-projects'>
         <span>Projects</span>
       </div>
       <div className='container-contacts'>
-        <IconsContainer
-          icons={selectedProfile.contactsLink.icons}
-          title={selectedProfile.contactsLink.title}
-        />
+        {renderContainer(selectedProfile.container8)}
       </div>
       <div className='container-info-link'>
-        <IconsContainer
-          icons={selectedProfile.infoLink.icons}
-          title={selectedProfile.infoLink.title}
-        />
+        {renderContainer(selectedProfile.container9)}
       </div>
     </div>
   );

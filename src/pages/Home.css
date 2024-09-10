@@ -18,94 +18,50 @@
 
 .container-name {
     background-color: var(--profile1-foreground-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--profile1-main-background-color);
     grid-column: 1 / span 2;
 }
 
 .container-question {
     background-color: var(--profile1-secondary-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', monospace;
-    color: var(--profile1-foreground-color);
     grid-column: 1 / span 2;
 }
 
 .container-answer {
     background-color: var(--profile1-main-background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', monospace;
-    color: var(--profile1-foreground-color);
     grid-column: 1 / span 2;
-
-    .answer {
-        padding-left: 5px;
-        font-weight: 600;
-    }
 }
 
 .container-change-profile {
     background-color: var(--main-container-color);
     text-align: center;
     grid-column: 1 / span 2;
-    font-family: 'Poppins', monospace;
     color: var(--profile1-foreground-color);
 }
 
 .container-info {
     background-color: var(--main-container-color);
-    text-align: center;
     grid-column: 1 / span 2;
-    font-family: 'Poppins', monospace;
-    color: var(--profile1-foreground-color);
 }
 
 .container-skills {
     background-color: var(--profile1-secondary-background-color);
-    text-align: center;
     grid-column: 1 / span 2;
-    font-family: 'Poppins', monospace;
-    color: var(--profile1-foreground-color);
 }
 
 .container-projects {
     background-color: var(--main-container-color);
     text-align: center;
     grid-column: 1 / span 2;
-    font-family: 'Poppins', monospace;
-    color: var(--profile1-foreground-color);
-
-    @media (min-width: 1200px) {
-        grid-column: 10 / span 3;
-        grid-row: 6 / span 10;
-    }
 }
 
 .container-contacts {
     grid-column: 1 / span 1;
     background-color: var(--profile1-main-background-color);
-
-    @media (min-width: 1200px) {
-        grid-column: 13 / span 3;
-        grid-row: 6 / span 5;
-    }
 }
 
 .container-info-link {
     grid-column: 2 / span 1;
     background-color: var(--profile1-secondary-background-color);
-
-    @media (min-width: 1200px) {
-        grid-column: 13 / span 3;
-        grid-row: 11 / span 5;
-    }
 }
 
 @media (min-width: 576px) {
@@ -123,18 +79,17 @@
 }
 
 @media (min-width: 1200px) {
-    .grid-container>div {
-        border-radius: 40px;
-        font-size: 1.25rem;
-        padding: var(--containers-padding);
-    }
-
     .grid-container {
         display: grid;
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: repeat(15, 1fr);
         padding: var(--page-padding);
         height: calc(100vh - 2 * var(--page-padding));
+    }
+
+    .grid-container>div {
+        border-radius: 40px;
+        padding: var(--containers-padding);
     }
 
     .container-name {
@@ -160,15 +115,45 @@
 
     }
 
-    .container-info{
-                    grid-column: 5 / span 5;
-                    grid-row: 6 / span 6;
-                
+    .container-info {
+        grid-column: 5 / span 5;
+        grid-row: 6 / span 6;
+
     }
 
-    .container-skills{
-                    grid-column: 5 / span 5;
-                    grid-row: 12 / span 4;
-                
+    .container-skills {
+        grid-column: 5 / span 5;
+        grid-row: 12 / span 4;
+
+    }
+
+    .container-projects {
+        grid-column: 10 / span 3;
+        grid-row: 6 / span 10;
+
+    }
+
+    .container-contacts {
+        grid-column: 13 / span 3;
+        grid-row: 6 / span 5;
+
+    }
+
+    .container-info-link {
+        grid-column: 13 / span 3;
+        grid-row: 11 / span 5;
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .grid-container>div {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .grid-container>div {
+        font-size: 2rem;
     }
 }

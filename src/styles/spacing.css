@@ -1,6 +1,7 @@
 :root {
-  --page-padding: 1rem;
+  --page-padding: 2rem;
   --containers-padding: 1.5rem;
+
 
   --breakpoint-xxs-min: 0px;
   --breakpoint-xxs-max: 319px;
@@ -23,28 +24,49 @@
   --breakpoint-lg-min: 1025px;
   --breakpoint-lg-max: 1199px;
 
-  --breakpoint-lg-min: 1025px;
-  --breakpoint-lg-max: 1199px;
-
   --breakpoint-xl-min: 1200px;
-  --breakpoint-xl-max: 1399px;
+  --breakpoint-xl-max: 1439px;
 
-  --breakpoint-xxl-min: 1400px;
-  --breakpoint-xxl-max: 2999px;
+  --breakpoint-xxl-min: 1440px;
+  --breakpoint-xxl-max: 1999px;
 
-  --breakpoint-xxxl-min: 3000px;
-  --breakpoint-xxxl-max: 3999px;
+  --breakpoint-xxxl-min: 2000px;
+  --breakpoint-xxxl-max: 2999px;
 
-  --breakpoint-xxxxl-min: 4000px;
-  --breakpoint-xxxxl-max: 4999px;
+  --breakpoint-xxxxl-min: 3000px;
+  --breakpoint-xxxxl-max: 3999px;
 
-  --breakpoint-xxxxxl-min: 5000px;
+  --breakpoint-xxxxxl-min: 4000px;
+  --breakpoint-xxxxxl-max: 4999px;
 
-  @media (min-width: 768px) {
-      --page-padding: 2rem;
-    }
+  --breakpoint-xxxxxxl-min: 5000px;
+
+  @media (min-width: 576px) {
+    --page-padding: 4rem;
+  }
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1024px) {}
 
   @media (min-width: 1200px) {
-    --containers-padding: 1.5rem;
+    --page-padding: 3rem;
+    --containers-padding: 2rem;
+  }
+
+  @media (min-width: 1400px) {
+    --page-padding: 4rem;
+  }
+
+  @media (min-width: 2000px) {
+    --page-padding: 7.5rem;
+  }
+
+  @media (min-width: 3000px) {
+    --page-padding: 10rem;
+  }
+
+  @media (min-width: 4000px) {
+    --page-padding: 15rem;
   }
 }
